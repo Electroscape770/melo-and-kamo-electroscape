@@ -1001,6 +1001,10 @@ footer {
 
 @media (max-width: 768px) {
 
+    body {
+        padding-top: 0;
+    }
+
     header {
         padding: 12px 20px;
         flex-direction: column;

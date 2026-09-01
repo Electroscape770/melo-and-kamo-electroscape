@@ -233,3 +233,24 @@ if (quoteForm) {
    ========================================================= */
 
 console.log("QUOTE FORM SCRIPT LOADED");
+
+/* =========================================================
+   MOBILE HAMBURGER MENU
+   ========================================================= */
+
+const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector("header nav");
+
+if (menuToggle && nav) {
+
+    menuToggle.addEventListener("click", function() {
+        nav.classList.toggle("active");
+    });
+
+    nav.querySelectorAll("a").forEach(function(link) {
+        link.addEventListener("click", function() {
+            nav.classList.remove("active");
+        });
+    });
+
+}
